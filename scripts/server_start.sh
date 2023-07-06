@@ -1,2 +1,2 @@
 #!/bin/bash
-nohup java -jar springbootApp.jar > /dev/null 2>&1 &
+nohup java -jar /root/springbootApp.jar > /dev/null 2>&1 &
