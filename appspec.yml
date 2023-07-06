@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-   - source: /target/springbootApp.jar
+   - source: springbootApp.jar
      destination: /root
 #   - source: /test.jsp
 #     destination: /root/tomcat/webapps/ROOT
