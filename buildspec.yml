@@ -6,17 +6,15 @@ phases:
       java: corretto8
   build:
     commands:
-      - echo Building
+      - mvn package
   post_build:
     commands:
       ## aws s3 cp target/*.war s3://myhhbucket23 . We don't need this step.
       - echo Build completed
 artifacts:
   files:
-    - dbtest.jsp
-    - test.jsp
-    - index.html
     - scripts/server_start.sh
     - scripts/server_stop.sh
     - appspec.yml
+    - target/springbootApp.jar
   discard-paths: yes
